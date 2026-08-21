@@ -1,5 +1,7 @@
 # verified-writer
 
+![tests](https://github.com/willdynan/verified-writer/actions/workflows/tests.yml/badge.svg)
+
 Every system of record I've automated has eventually lied to me. The API
 said 200; the field I wrote was gone. The payload was "accepted" and
 nothing changed. A column moved that nobody asked to move.
