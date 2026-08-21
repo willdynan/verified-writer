@@ -1,0 +1,7 @@
+[project]
+name = "verified-writer"
+version = "0.1.0"
+description = "Writes with proof: preflight, staleness refusal, pre-state ledger, read-back diff, scoped idempotent rollback, and a file:// approval page."
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Will Dynan", email = "williamdynan@gmail.com" }]
