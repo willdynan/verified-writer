@@ -1,9 +1,9 @@
 """Append-only JSONL ledger. Every state change is an appended event.
 
 Rollback marks are events too, never in-place edits — a rewrite that holds the
-marks in memory and writes the file back unmarked is a bug that has actually
-shipped. Append-only makes that shape impossible: the second rollback reads the
-first one's marks because nothing can unwrite them.
+marks in memory and writes the file back unmarked is a bug that has shipped in
+the wild. Append-only makes that shape impossible: the second rollback reads
+the first one's marks because nothing can unwrite them.
 """
 
 import json

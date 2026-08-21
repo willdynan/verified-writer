@@ -1,7 +1,7 @@
 """Scoped rollback: only what the ledger says this tool wrote, only once.
 
-Anything changed by hand in the target is untouchable from here by design.
-Restores are verified by read-back like any other write, and the rollback mark
+Anything a human changed in the target stays untouchable from here by design.
+Read-back verifies every restore like any other write, and the rollback mark
 is an appended event, so a second run finds nothing to do instead of
 re-deleting work.
 """

@@ -2,7 +2,7 @@
 
 Order per change: refuse stale approvals, snapshot pre-state into the ledger,
 write, read back, diff. The intended fields must all have landed; any other
-field that moved is flagged UNEXPECTED unless declared derived. Dry-run is the
+moved field flags as UNEXPECTED unless declared derived. Dry-run is the
 default — `live=True` is a decision, not a flag you discover.
 """
 

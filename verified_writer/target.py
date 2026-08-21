@@ -1,7 +1,7 @@
-"""The write target: a small protocol, and a demo implementation that lies.
+"""The write target: a small protocol, and a demo that lies.
 
-DemoTarget injects the failure modes this toolkit exists to catch, all observed
-in real systems: a 200 that dropped a field, a 200 that wrote nothing at all,
+DemoTarget injects the failure modes this toolkit exists to catch, each seen
+in a real system: a 200 that dropped a field, a 200 that wrote nothing at all,
 server-side derived fields that change on every write, and side effects the
 payload never asked for.
 """
